@@ -1,0 +1,95 @@
+html {
+    color: #ffffff;
+    background-color: #282828;
+    font-family: "monaco", monospace;
+}
+.header1 {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    font-size: 50px;
+    grid-column: 1 / -1;
+}
+/*this is the searchbar css*/
+.search {
+    margin: 0 auto;
+    width: 60%;
+}
+.searchbox {
+    color: #ffffff;
+    background-color: #343434;
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    width: auto;
+    height: 2em;
+    border: none;
+    border-radius: 25px;
+}
+.button {
+    width: 41px;
+}
+/*End Searchbar*/
+.home-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 50%;
+}
+.box {
+    padding-bottom: 19.95pt;
+    margin: 0;
+    border-radius: 25px;
+}
+.home-link:link, .home-link:visited {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #151515;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin: 4px 4px;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+.home-link:hover, .home-link:active {
+    margin-left: 14px;
+}
+.home-link.inoreader-link {
+    background-color: #1875f3;
+}
+.home-link.youtube-link {
+    background-color: #ff0000;
+}
+.home-link.reddit-link {
+    background-color: #ff4500;
+}
+.home-link.dingusland {
+    background-color: #369b9b;
+    border: 2px outset #000000;
+    border-radius: 0px;
+}
+.box.proton-box {
+    background-color: #1b1340;
+}
+.home-link.proton-link {
+    background-color: #7c5cff;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+}
+.logo {
+    font-family: "Sofia";
+}
+.footer-links:link, .footer-links:visited {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footer-links:hover, .footer-links:active {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
