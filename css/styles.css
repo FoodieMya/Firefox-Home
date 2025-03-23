@@ -9,26 +9,47 @@ html {
     font-size: 50px;
     grid-column: 1 / -1;
 }
-/*this is the searchbar css*/
-.search {
-    margin: 0 auto;
-    width: 60%;
+.body-text {
+    padding: 20px;
+    padding-right: 60%;
+  }
+/*this is the hotbar css*/
+.hotbar-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.searchbox-container {
+    margin: 4px 4px;
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
 }
 .searchbox {
     color: #ffffff;
     background-color: #343434;
     text-align: center;
     font-family: inherit;
-    font-size: 20px;
-    width: auto;
-    height: 2em;
+    font-size: inherit;
+    padding: 14px 25px;
     border: none;
     border-radius: 25px;
+    width: 60%;
 }
-.button {
-    width: 41px;
+.hotbar-link {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #151515;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration: none;
+    padding: 14px 25px;
+    margin: 4px 4px;
+    border-radius: 25px;
 }
-/*End Searchbar*/
+.hotbar-link.github {
+    background-color: #0d1117;
+}
+/*end hotbar*/
 .home-grid {
     margin: auto;
     display: grid;
