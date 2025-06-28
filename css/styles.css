@@ -1,6 +1,6 @@
 html {
     color: #ffffff;
-    background-color: #282828;
+    background: url("/media/Backdrop.jpg") no-repeat fixed 0 0 / cover;
     font-family: "monaco", monospace;
 }
 .header1 {
@@ -34,29 +34,47 @@ html {
     padding: 14px 25px;
     border: none;
     border-radius: 25px;
+    outline: none;
     width: 60%;
+    transition: 0.25s;
 }
-.hotbar-link {
+.searchbox:focus {
+    background-color: #393939;
+    box-shadow: 0px 0px 5px #505050 inset;
+    width: 63%;
+}
+.hotbar-link:link, .hotbar-link:visited {
     display: inline-block;
     color: #ffffff;
     background-color: #151515;
+    box-shadow: 0px 0px 5px #505050;
     font-family: "Lucida Console", "Courier New", monospace;
     text-decoration: none;
     padding: 14px 25px;
     margin: 4px 4px;
     border-radius: 25px;
+    transition: 0.2s;
+}
+.hotbar-link:hover, .hotbar-link:active {
+    box-shadow: 0px 0px 8px #505050;
+    padding: 14px 30px;
 }
 .hotbar-link.github {
     background-color: #0d1117;
 }
 /*end hotbar*/
 .home-grid {
+    background-color: #1515158e;
+    box-shadow: 0px 0px 5px #505050 inset;
+    border-radius: 25px;
+    padding: 20px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;
     row-gap: 1em;
     width: 50%;
+    backdrop-filter: blur(6px);
 }
 .box {
     padding-bottom: 19.95pt;
@@ -67,6 +85,7 @@ html {
     display: inline-block;
     color: #ffffff;
     background-color: #151515;
+    box-shadow: 0px 0px 5px #505050;
     font-family: "Lucida Console", "Courier New", monospace;
     text-decoration: none;
     padding: 14px 25px;
@@ -75,6 +94,7 @@ html {
     transition: 0.5s;
 }
 .home-link:hover, .home-link:active {
+    box-shadow: 0px 0px 8px;
     margin-left: 14px;
 }
 .home-link.inoreader-link {
@@ -88,6 +108,7 @@ html {
 }
 .home-link.dingusland {
     background-color: #369b9b;
+    box-shadow: none;
     border: 2px outset #000000;
     border-radius: 0px;
 }
